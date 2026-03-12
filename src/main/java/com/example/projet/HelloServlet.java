@@ -10,12 +10,17 @@ public class HelloServlet extends HttpServlet {
     private String message;
 
     public void init() {
-        System.out.println("La Servlet est instanciée et passe par init");
+        System.out.println("La Servlet passe par la méthode init");
         message = "Coucou, c'est la Servlet.";
     }
 
+    public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        System.out.println("la Servlet passe par la méthode service");
+        doGet(request,response);
+    }
+
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        System.out.println("La Servlet passe par doGet");
+        System.out.println("La Servlet passe par la méthode doGet");
         response.setContentType("text/html");
 
         // Hello
@@ -26,6 +31,6 @@ public class HelloServlet extends HttpServlet {
     }
 
     public void destroy() {
-        System.out.println("La Servlet passe par destroy");
+        System.out.println("La Servlet passe par la méthode destroy");
     }
 }
