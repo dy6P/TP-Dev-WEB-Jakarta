@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<form action="exercice1.jsp" method="post">
+<form action="exercice2.jsp" method="post">
 
     <label>Message</label>
     <input type="text" name="message"><br><br>
