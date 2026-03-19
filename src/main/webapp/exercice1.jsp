@@ -37,5 +37,7 @@
 
 <p><strong><%= message %></strong></p>
 
+<a href="index.jsp">Accueil</a>
+
 </body>
 </html>

@@ -19,5 +19,8 @@
 <br>
 <br>
 <a href="exercice2.jsp">exercice2</a>
+<br>
+<br>
+<a href="exercice3/formulaire.jsp">exercice3</a>
 </body>
 </html>

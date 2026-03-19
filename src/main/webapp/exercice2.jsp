@@ -7,9 +7,6 @@
 
 <form action="exercice2.jsp" method="post">
 
-    <label>Message</label>
-    <input type="text" name="message"><br><br>
-
     <label>Texte</label>
     <input type="text" name="texte"><br><br>
 
@@ -21,11 +18,10 @@
 </form>
 
 <%
-    String message = request.getParameter("message");
     String texte = request.getParameter("texte");
     String couleur = request.getParameter("couleur");
 
-    if(message != null && couleur != null){
+    if(texte != null && couleur != null){
 %>
 
 <table style="border:1px solid black; border-collapse:collapse;">
@@ -39,13 +35,13 @@
 
                 if((i+j)%2==0){
         %>
-        <td style="padding:20px; border:1px solid black;">
-            <%= texte %>
+        <td style="padding:20px; border:1px solid <%= couleur %>;">
+            <p style="color:<%= couleur %>"><%= texte %></p>
         </td>
         <%
         }else{
         %>
-        <td></td>
+        <td style="padding:20px; border:1px solid <%= couleur %>; background-color:<%= couleur %>"></td>
         <%
                 }
 
@@ -61,6 +57,10 @@
 <%
     }
 %>
+
+<br>
+<br>
+<a href="index.jsp">Accueil</a>
 
 </body>
 </html>
