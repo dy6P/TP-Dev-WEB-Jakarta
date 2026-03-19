@@ -17,7 +17,7 @@ public class Exercice4 implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        System.out.println("Passage numéro "+compt+" dans le filtre");
+        System.out.println("Passage numero "+compt+" dans le filtre");
         try {
             chain.doFilter(request, response);
         } catch (IOException e) {
