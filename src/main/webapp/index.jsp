@@ -22,5 +22,8 @@
 <br>
 <br>
 <a href="exercice3/formulaire.jsp">exercice3</a>
+<br>
+<br>
+<a href="exercice9/index9.jsp">exercice9</a>
 </body>
 </html>
